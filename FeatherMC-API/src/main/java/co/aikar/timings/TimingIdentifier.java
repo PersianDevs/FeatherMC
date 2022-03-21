@@ -15,7 +15,7 @@
  *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * FITNESS FOR A PARTICULAR PURPOSE AND NON INFRINGEMENT. IN NO EVENT SHALL THE
  * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
@@ -23,7 +23,6 @@
  */
 package co.aikar.timings;
 
-import com.google.common.base.Function;
 import co.aikar.util.LoadingMap;
 import co.aikar.util.MRUMapCache;
 
@@ -37,15 +36,10 @@ import java.util.Map;
  */
 final class TimingIdentifier {
     /**
-     * Holds all groups. Autoloads on request for a group by name.
+     * Holds all groups. Autoload on request for a group by name.
      */
     static final Map<String, TimingGroup> GROUP_MAP = MRUMapCache.of(
-        LoadingMap.newIdentityHashMap(new Function<String, TimingGroup>() {
-            @Override
-            public TimingGroup apply(String group) {
-                return new TimingGroup(group);
-            }
-        }, 64)
+        LoadingMap.newIdentityHashMap(TimingGroup::new, 64)
     );
     static final TimingGroup DEFAULT_GROUP = getGroup("Minecraft");
     final String group;
@@ -93,7 +87,7 @@ final class TimingIdentifier {
         final int id = idPool++;
 
         final String name;
-        ArrayDeque<TimingHandler> handlers = new ArrayDeque<TimingHandler>(64);
+        ArrayDeque<TimingHandler> handlers = new ArrayDeque<>(64);
 
         private TimingGroup(String name) {
             this.name = name;

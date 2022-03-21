@@ -36,12 +36,7 @@ import static co.aikar.util.JSONUtil.toArray;
  */
 class TimingData {
 
-    static Function<Integer, TimingData> LOADER = new Function<Integer, TimingData>() {
-        @Override
-        public TimingData apply(Integer input) {
-            return new TimingData(input);
-        }
-    };
+    static Function<Integer, TimingData> LOADER = TimingData::new;
     int id;
     int count = 0;
     int lagCount = 0;

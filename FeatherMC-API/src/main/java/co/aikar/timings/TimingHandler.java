@@ -15,7 +15,7 @@
  *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * FITNESS FOR A PARTICULAR PURPOSE AND NON INFRINGEMENT. IN NO EVENT SHALL THE
  * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
@@ -23,13 +23,10 @@
  */
 package co.aikar.timings;
 
+import co.aikar.util.LoadingIntMap;
 import gnu.trove.map.hash.TIntObjectHashMap;
 import org.bukkit.Bukkit;
-import co.aikar.util.LoadingIntMap;
-import co.aikar.util.LoadingMap;
-import co.aikar.util.MRUMapCache;
 
-import java.util.Map;
 import java.util.logging.Level;
 
 class TimingHandler implements Timing {
@@ -40,7 +37,7 @@ class TimingHandler implements Timing {
     final String name;
     final boolean verbose;
 
-    final TIntObjectHashMap<TimingData> children = new LoadingIntMap<TimingData>(TimingData.LOADER);
+    final TIntObjectHashMap<TimingData> children = new LoadingIntMap<>(TimingData.LOADER);
 
     final TimingData record;
     final TimingHandler groupHandler;
@@ -156,7 +153,6 @@ class TimingHandler implements Timing {
     /**
      * Reset this timer, setting all values to zero.
      *
-     * @param full
      */
     void reset(boolean full) {
         record.reset();

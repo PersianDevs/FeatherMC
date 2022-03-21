@@ -25,18 +25,9 @@ package co.aikar.util;
 
 
 import com.google.common.base.Function;
-import org.bukkit.Material;
-import co.aikar.timings.TimingHistory;
-import org.w3c.dom.css.Counter;
 
 import java.lang.reflect.Constructor;
-import java.util.AbstractMap;
-import java.util.Collection;
-import java.util.EnumMap;
-import java.util.HashMap;
-import java.util.IdentityHashMap;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 /**
  * Allows you to pass a Loader function that when a key is accessed that doesn't exists,
@@ -76,7 +67,7 @@ public class LoadingMap <K,V> extends AbstractMap<K, V> {
      * @return
      */
     public static <K, V> Map<K, V> of(Map<K, V> backingMap, Function<K, V> loader) {
-        return new LoadingMap<K, V>(backingMap, loader);
+        return new LoadingMap<>(backingMap, loader);
     }
 
     /**
@@ -96,7 +87,7 @@ public class LoadingMap <K,V> extends AbstractMap<K, V> {
      */
     public static <K, V> Map<K, V> newAutoMap(Map<K, V> backingMap, final Class<? extends K> keyClass,
                                               final Class<? extends V> valueClass) {
-        return new LoadingMap<K, V>(backingMap, new AutoInstantiatingLoader<K, V>(keyClass, valueClass));
+        return new LoadingMap<>(backingMap, new AutoInstantiatingLoader<>(keyClass, valueClass));
     }
     /**
      * Creates a LoadingMap with an auto instantiating loader.
@@ -128,7 +119,7 @@ public class LoadingMap <K,V> extends AbstractMap<K, V> {
      * @return
      */
     public static <K, V> Map<K, V> newHashAutoMap(final Class<? extends K> keyClass, final Class<? extends V> valueClass) {
-        return newAutoMap(new HashMap<K, V>(), keyClass, valueClass);
+        return newAutoMap(new HashMap<>(), keyClass, valueClass);
     }
 
     /**
@@ -158,7 +149,7 @@ public class LoadingMap <K,V> extends AbstractMap<K, V> {
      * @return
      */
     public static <K, V> Map<K, V> newHashAutoMap(final Class<? extends K> keyClass, final Class<? extends V> valueClass, int initialCapacity, float loadFactor) {
-        return newAutoMap(new HashMap<K, V>(initialCapacity, loadFactor), keyClass, valueClass);
+        return newAutoMap(new HashMap<>(initialCapacity, loadFactor), keyClass, valueClass);
     }
 
     /**
@@ -185,7 +176,7 @@ public class LoadingMap <K,V> extends AbstractMap<K, V> {
      * @return
      */
     public static <K, V> Map<K, V> newHashMap(Function<K, V> loader) {
-        return new LoadingMap<K, V>(new HashMap<K, V>(), loader);
+        return new LoadingMap<>(new HashMap<>(), loader);
     }
 
     /**
@@ -198,7 +189,7 @@ public class LoadingMap <K,V> extends AbstractMap<K, V> {
      * @return
      */
     public static <K, V> Map<K, V> newHashMap(Function<K, V> loader, int initialCapacity, float loadFactor) {
-        return new LoadingMap<K, V>(new HashMap<K, V>(initialCapacity, loadFactor), loader);
+        return new LoadingMap<>(new HashMap<>(initialCapacity, loadFactor), loader);
     }
 
     /**
@@ -209,7 +200,7 @@ public class LoadingMap <K,V> extends AbstractMap<K, V> {
      * @return
      */
     public static <K, V> Map<K, V> newIdentityHashMap(Function<K, V> loader) {
-        return new LoadingMap<K, V>(new IdentityHashMap<K, V>(), loader);
+        return new LoadingMap<>(new IdentityHashMap<>(), loader);
     }
 
     /**
@@ -221,7 +212,7 @@ public class LoadingMap <K,V> extends AbstractMap<K, V> {
      * @return
      */
     public static <K, V> Map<K, V> newIdentityHashMap(Function<K, V> loader, int initialCapacity) {
-        return new LoadingMap<K, V>(new IdentityHashMap<K, V>(initialCapacity), loader);
+        return new LoadingMap<>(new IdentityHashMap<>(initialCapacity), loader);
     }
 
     @Override
@@ -276,7 +267,7 @@ public class LoadingMap <K,V> extends AbstractMap<K, V> {
     }
 
     public LoadingMap<K, V> clone() {
-        return new LoadingMap<K, V>(backingMap, loader);
+        return new LoadingMap<>(backingMap, loader);
     }
 
     private static class AutoInstantiatingLoader<K, V> implements Function<K, V> {
@@ -293,7 +284,7 @@ public class LoadingMap <K,V> extends AbstractMap<K, V> {
                 }
             } catch (NoSuchMethodException e) {
                 throw new IllegalStateException(
-                    valueClass.getName() + " does not have a constructor for " + (keyClass != null ? keyClass.getName() : null));
+                        valueClass.getName() + " does not have a constructor for " + keyClass.getName());
             }
         }
 
