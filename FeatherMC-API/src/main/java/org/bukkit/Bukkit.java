@@ -9,7 +9,6 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.inventory.InventoryType;
 import org.bukkit.event.server.ServerListPingEvent;
 import org.bukkit.generator.ChunkGenerator;
-import org.bukkit.help.HelpMap;
 import org.bukkit.inventory.*;
 import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.map.MapView;
@@ -899,14 +898,6 @@ public final class Bukkit {
         return server.pluginsPermissionEnabled();
     }
 
-    /**
-     * Checks if /help is enabled
-     * @return whether /help is enabled
-     */
-    public static boolean helpCommandEnabled() {
-        return server.helpCommandEnabled();
-    }
-
     // Nacho end
     /**
      * Gets the folder that contains all of the various {@link World}s.
@@ -933,15 +924,6 @@ public final class Bukkit {
      */
     public static Messenger getMessenger() {
         return server.getMessenger();
-    }
-
-    /**
-     * Gets the {@link HelpMap} providing help topics for this server.
-     *
-     * @return a help map for this server
-     */
-    public static HelpMap getHelpMap() {
-        return server.getHelpMap();
     }
 
     /**

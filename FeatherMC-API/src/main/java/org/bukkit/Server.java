@@ -9,7 +9,6 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.inventory.InventoryType;
 import org.bukkit.event.server.ServerListPingEvent;
 import org.bukkit.generator.ChunkGenerator;
-import org.bukkit.help.HelpMap;
 import org.bukkit.inventory.*;
 import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.map.MapView;
@@ -731,16 +730,8 @@ public interface Server extends PluginMessageRecipient {
     default boolean pluginsPermissionEnabled() {
         return false;
     }
-
-    /**
-     * Checks if /help is enabled
-     * @return whether /help is enabled
-     */
-    default boolean helpCommandEnabled() {
-        return true;
-    }
-
     // Nacho end
+
     /**
      * Gets the folder that contains all of the various {@link World}s.
      *
@@ -761,13 +752,6 @@ public interface Server extends PluginMessageRecipient {
      * @return messenger responsible for this server
      */
     public Messenger getMessenger();
-
-    /**
-     * Gets the {@link HelpMap} providing help topics for this server.
-     *
-     * @return a help map for this server
-     */
-    public HelpMap getHelpMap();
 
     /**
      * Creates an empty inventory of the specified type. If the type is {@link
