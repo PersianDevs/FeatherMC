@@ -1,0 +1,28 @@
+settings:
+    allow-end: false
+    warn-on-overload: true
+    permissions-file: permissions.yml
+    update-folder: update
+    plugin-profiling: false
+    connection-throttle: 4000
+    query-plugins: true
+    deprecated-verbose: default
+    shutdown-message: §cServer Baste Shod
+spawn-limits:
+    monsters: -1
+    animals: -1
+    water-animals: -1
+    ambient: -1
+chunk-gc:
+    period-in-ticks: 450
+    load-threshold: 0
+ticks-per:
+    animal-spawns: -1
+    monster-spawns: -1
+    autosave: 6000
+database:
+    username: bukkit
+    isolation: SERIALIZABLE
+    driver: org.sqlite.JDBC
+    password: walrus
+    url: jdbc:sqlite:{DIR}{NAME}.db
