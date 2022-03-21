@@ -1,9 +1,9 @@
 package net.minecraft.server;
 
-import java.util.List;
-
 import dev.cobblesword.nachospigot.commons.Constants;
-import org.bukkit.craftbukkit.event.CraftEventFactory; // CraftBukkit
+import org.bukkit.craftbukkit.event.CraftEventFactory;
+
+import java.util.List;
 
 public abstract class EntityFireball extends Entity {
 

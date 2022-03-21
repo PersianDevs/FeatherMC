@@ -5,7 +5,7 @@ import org.junit.Test;
 
 import java.util.concurrent.Callable;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 public class LazyMetadataValueTest {
     private LazyMetadataValue subject;

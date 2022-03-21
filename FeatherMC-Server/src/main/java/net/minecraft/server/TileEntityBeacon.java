@@ -1,17 +1,14 @@
 package net.minecraft.server;
 
 // CraftBukkit start
-import org.bukkit.craftbukkit.entity.CraftHumanEntity;
-import org.bukkit.entity.HumanEntity;
-// CraftBukkit end
 
-// PaperSpigot start
+import com.destroystokyo.paper.event.block.BeaconEffectEvent;
+import org.bukkit.craftbukkit.entity.CraftHumanEntity;
 import org.bukkit.craftbukkit.event.CraftEventFactory;
+import org.bukkit.entity.HumanEntity;
 import org.bukkit.entity.Player;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
-import com.destroystokyo.paper.event.block.BeaconEffectEvent;
-// PaperSpigot end
 
 import java.util.List;
 

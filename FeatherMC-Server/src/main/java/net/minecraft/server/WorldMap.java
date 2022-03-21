@@ -3,16 +3,13 @@ package net.minecraft.server;
 import com.google.common.base.Charsets;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
-
-import java.util.*;
-
-// CraftBukkit start
-
 import org.bukkit.Bukkit;
 import org.bukkit.craftbukkit.CraftServer;
 import org.bukkit.craftbukkit.CraftWorld;
 import org.bukkit.craftbukkit.map.CraftMapView;
 import org.bukkit.entity.Player;
+
+import java.util.*;
 // CraftBukkit end
 
 public class WorldMap extends PersistentBase {

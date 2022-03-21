@@ -4,6 +4,7 @@ import dev.cobblesword.nachospigot.exception.ExploitException;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.codec.MessageToByteEncoder;
+
 import java.io.IOException;
 
 public class PacketEncoder extends MessageToByteEncoder<Packet<?>> {

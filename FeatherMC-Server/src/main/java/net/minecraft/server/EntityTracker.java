@@ -1,13 +1,13 @@
 package net.minecraft.server;
 
 import com.google.common.collect.Lists;
-
-import java.util.*;
-import java.util.concurrent.Callable;
-
 import me.elier.nachospigot.config.NachoConfig;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
+import java.util.ArrayList;
+import java.util.Set;
+import java.util.concurrent.Callable;
 
 public class EntityTracker {
 

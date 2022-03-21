@@ -1,12 +1,10 @@
 package net.minecraft.server;
 
-import java.util.Random;
-
-import dev.cobblesword.nachospigot.Nacho;
 import me.elier.nachospigot.config.NachoConfig;
 import org.bukkit.Location;
-import org.bukkit.craftbukkit.CraftWorld;
 import org.bukkit.craftbukkit.util.CraftMagicNumbers;
+
+import java.util.Random;
 
 public class BlockFalling extends Block {
 

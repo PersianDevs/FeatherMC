@@ -1,14 +1,14 @@
 package net.minecraft.server;
 
+import co.aikar.timings.SpigotTimings;
+import co.aikar.timings.Timing;
 import com.google.common.collect.Maps;
-import java.util.Map;
-import java.util.concurrent.Callable;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.bukkit.inventory.InventoryHolder;
 
-import co.aikar.timings.SpigotTimings; // Spigot
-import co.aikar.timings.Timing; // Spigot
-import org.bukkit.inventory.InventoryHolder; // CraftBukkit
+import java.util.Map;
+import java.util.concurrent.Callable;
 
 public abstract class TileEntity {
 

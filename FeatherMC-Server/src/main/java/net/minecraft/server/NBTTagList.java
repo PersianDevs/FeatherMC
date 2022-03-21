@@ -1,15 +1,15 @@
 package net.minecraft.server;
 
 import com.google.common.collect.Lists;
+import dev.cobblesword.nachospigot.commons.Constants;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import java.io.DataInput;
 import java.io.DataOutput;
 import java.io.IOException;
 import java.util.Iterator;
 import java.util.List;
-
-import dev.cobblesword.nachospigot.commons.Constants;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
 public class NBTTagList extends NBTBase {
 

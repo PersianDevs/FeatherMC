@@ -1,7 +1,5 @@
 package net.minecraft.server;
 
-import org.bukkit.Bukkit;
-
 import java.io.IOException;
 import java.util.List;
 

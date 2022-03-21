@@ -1,16 +1,11 @@
 package net.minecraft.server;
 
-import java.util.Iterator;
-import java.util.List;
-
-// CraftBukkit start
-import java.util.HashMap;
-
+import me.elier.nachospigot.config.NachoConfig;
 import org.bukkit.craftbukkit.entity.CraftLivingEntity;
 import org.bukkit.entity.LivingEntity;
-// CraftBukkit end
 
-import me.elier.nachospigot.config.NachoConfig;
+import java.util.HashMap;
+import java.util.List;
 
 public class EntityPotion extends EntityProjectile {
 

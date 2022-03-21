@@ -1,10 +1,11 @@
 package net.minecraft.server;
 
-import com.velocitypowered.natives.compression.VelocityCompressor; // Paper
-import com.velocitypowered.natives.util.MoreByteBufUtils; // Paper
+import com.velocitypowered.natives.compression.VelocityCompressor;
+import com.velocitypowered.natives.util.MoreByteBufUtils;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.codec.MessageToByteEncoder;
+
 import java.util.zip.Deflater;
 
 public class PacketCompressor extends MessageToByteEncoder<ByteBuf> {

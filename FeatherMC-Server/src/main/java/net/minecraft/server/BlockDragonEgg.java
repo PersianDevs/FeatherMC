@@ -1,9 +1,9 @@
 package net.minecraft.server;
 
-import java.util.Random;
-
 import dev.cobblesword.nachospigot.commons.Constants;
-import org.bukkit.event.block.BlockFromToEvent; // CraftBukkit
+import org.bukkit.event.block.BlockFromToEvent;
+
+import java.util.Random;
 
 public class BlockDragonEgg extends Block {
 

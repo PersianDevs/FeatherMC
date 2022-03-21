@@ -2,16 +2,14 @@ package net.minecraft.server;
 
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Lists;
-import java.util.List;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
-// CraftBukkit start
-import java.util.Queue;
-import java.util.LinkedList;
 import org.bukkit.craftbukkit.chunkio.ChunkIOExecutor;
 
 import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
 // CraftBukkit end
 
 public class PlayerChunkMap {

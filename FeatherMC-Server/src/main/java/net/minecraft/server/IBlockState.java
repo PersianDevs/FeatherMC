@@ -1,9 +1,8 @@
 package net.minecraft.server;
 
-import java.util.Collection;
-
-// TacoSpigot start
 import net.techcable.tacospigot.Indexer;
+
+import java.util.Collection;
 // TacoSpigot end
 
 public interface IBlockState<T extends Comparable<T>> {

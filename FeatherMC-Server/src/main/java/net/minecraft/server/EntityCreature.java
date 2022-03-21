@@ -1,10 +1,9 @@
 package net.minecraft.server;
 
-import java.util.UUID;
-
-// CraftBukkit start
 import com.eatthepath.uuid.FastUUID;
 import org.bukkit.event.entity.EntityUnleashEvent;
+
+import java.util.UUID;
 // CraftBukkit end
 
 public abstract class EntityCreature extends EntityInsentient {

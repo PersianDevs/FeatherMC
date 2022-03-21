@@ -1,9 +1,9 @@
 package net.minecraft.server;
 
-import java.util.Random;
-
 import dev.cobblesword.nachospigot.commons.Constants;
-import org.bukkit.event.block.BlockRedstoneEvent; // CraftBukkit
+import org.bukkit.event.block.BlockRedstoneEvent;
+
+import java.util.Random;
 
 public class BlockRedstoneTorch extends BlockTorch {
 

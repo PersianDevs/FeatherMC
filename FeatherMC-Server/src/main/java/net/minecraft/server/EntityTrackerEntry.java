@@ -1,13 +1,11 @@
 package net.minecraft.server;
 
-import java.util.*;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
-// CraftBukkit start
 import org.bukkit.entity.Player;
 import org.bukkit.event.player.PlayerVelocityEvent;
+
+import java.util.*;
 // CraftBukkit end
 
 public class EntityTrackerEntry {

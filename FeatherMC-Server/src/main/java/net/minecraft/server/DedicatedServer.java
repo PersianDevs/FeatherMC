@@ -1,30 +1,26 @@
 package net.minecraft.server;
 
+import co.aikar.timings.SpigotTimings;
+import com.destroystokyo.paper.PaperConfig;
+import dev.cobblesword.nachospigot.Nacho;
+import dev.cobblesword.nachospigot.knockback.KnockbackConfig;
+import me.elier.nachospigot.config.NachoConfig;
+import org.apache.logging.log4j.Level;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.bukkit.craftbukkit.LoggerOutputStream;
+import org.bukkit.craftbukkit.util.Waitable;
+import org.bukkit.event.server.RemoteServerCommandEvent;
+import org.bukkit.event.server.ServerCommandEvent;
+
 import java.io.File;
 import java.io.IOException;
+import java.io.PrintStream;
 import java.net.InetAddress;
 import java.net.Proxy;
 import java.util.Random;
 import java.util.concurrent.Callable;
 import java.util.concurrent.TimeUnit;
-
-import com.destroystokyo.paper.PaperConfig;
-import dev.cobblesword.nachospigot.Nacho;
-import dev.cobblesword.nachospigot.commons.IPUtils;
-import dev.cobblesword.nachospigot.knockback.KnockbackConfig;
-import me.elier.nachospigot.config.NachoConfig;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
-// CraftBukkit start
-import java.io.PrintStream;
-import org.apache.logging.log4j.Level;
-
-import org.bukkit.craftbukkit.LoggerOutputStream;
-import co.aikar.timings.SpigotTimings; // Spigot
-import org.bukkit.event.server.ServerCommandEvent;
-import org.bukkit.craftbukkit.util.Waitable;
-import org.bukkit.event.server.RemoteServerCommandEvent;
 // CraftBukkit end
 
 public class DedicatedServer extends MinecraftServer implements IMinecraftServer {
@@ -118,7 +114,7 @@ public class DedicatedServer extends MinecraftServer implements IMinecraftServer
 
         thread.setDaemon(true);
         thread.start();
-        DedicatedServer.LOGGER.info("Dar Hale Start Kardan Server (FeatherMC: BETA v0.0.2 & MC: v1.8.8)");
+        DedicatedServer.LOGGER.info("Dar Hale Start Kardan Server (FeatherMC: BETA v0.0.3 & MC: v1.8.8)");
 
         // FeatherMC - Removed useless check
         /*

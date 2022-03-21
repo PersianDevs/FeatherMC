@@ -3,31 +3,9 @@ package net.minecraft.server;
 import com.google.common.base.Function;
 import com.google.common.base.Joiner;
 import com.google.common.base.Objects;
-import com.google.common.collect.HashBasedTable;
-import com.google.common.collect.ImmutableList;
-import com.google.common.collect.ImmutableMap;
-import com.google.common.collect.ImmutableTable;
-import com.google.common.collect.Iterables;
-import com.google.common.collect.Lists;
-import com.google.common.collect.Maps;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
+import com.google.common.collect.*;
 
-// TacoSpigot start
-import com.google.common.collect.Table;
-
-import net.techcable.tacospigot.BlockStateRegistry;
-import net.techcable.tacospigot.ImmutableArrayMap;
-import net.techcable.tacospigot.ImmutableArrayTable;
-import net.techcable.tacospigot.TacoSpigotConfig;
+import java.util.*;
 // TacoSpigot end
 
 public class BlockStateList {

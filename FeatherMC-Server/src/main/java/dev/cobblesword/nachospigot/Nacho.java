@@ -1,16 +1,15 @@
 package dev.cobblesword.nachospigot;
 
+import com.google.common.collect.Sets;
 import dev.cobblesword.nachospigot.commands.KnockbackCommand;
+import dev.cobblesword.nachospigot.commands.SetMaxSlotCommand;
 import dev.cobblesword.nachospigot.protocol.MovementListener;
+import dev.cobblesword.nachospigot.protocol.PacketListener;
 import me.elier.nachospigot.config.NachoConfig;
+import net.minecraft.server.MinecraftServer;
 import xyz.sculas.nacho.anticrash.AntiCrash;
 import xyz.sculas.nacho.async.AsyncExplosions;
-import dev.cobblesword.nachospigot.protocol.PacketListener;
-import net.minecraft.server.MinecraftServer;
-import dev.cobblesword.nachospigot.commands.SetMaxSlotCommand;
-import dev.cobblesword.nachospigot.commands.SpawnMobCommand;
 
-import com.google.common.collect.Sets;
 import java.util.Set;
 
 public class Nacho {

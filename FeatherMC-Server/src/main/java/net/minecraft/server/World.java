@@ -5,9 +5,12 @@ import com.google.common.base.Predicate;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import com.google.common.collect.Sets;
+import com.google.common.util.concurrent.ThreadFactoryBuilder;
+import dev.cobblesword.nachospigot.commons.OptimizedWorldTileEntitySet;
 import me.elier.nachospigot.config.NachoConfig;
 import me.elier.nachospigot.config.NachoWorldConfig;
 import me.suicidalkids.ion.movement.MovementCache;
+import net.jafama.FastMath;
 import org.bukkit.Bukkit;
 import org.bukkit.block.BlockState;
 import org.bukkit.craftbukkit.CraftServer;
@@ -19,18 +22,10 @@ import org.bukkit.event.block.BlockPhysicsEvent;
 import org.bukkit.event.entity.CreatureSpawnEvent.SpawnReason;
 import org.bukkit.generator.ChunkGenerator;
 
-import dev.cobblesword.nachospigot.commons.OptimizedWorldTileEntitySet;
-
 import java.util.*;
 import java.util.concurrent.Callable;
-
-// PaperSpigot start
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import com.google.common.util.concurrent.ThreadFactoryBuilder;
-// PaperSpigot end
-
-import net.jafama.FastMath;
 
 // CraftBukkit start
 // CraftBukkit end

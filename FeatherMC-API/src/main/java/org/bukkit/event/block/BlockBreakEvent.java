@@ -3,7 +3,6 @@ package org.bukkit.event.block;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Cancellable;
-import org.bukkit.event.HandlerList;
 
 /**
  * Vaqty In Event Call Mishe Ke Yek Player Blocki Ro Kharab Kone

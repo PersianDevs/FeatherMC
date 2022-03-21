@@ -2,17 +2,11 @@ package net.minecraft.server;
 
 import com.google.common.base.Predicate;
 import com.google.common.collect.Sets;
-import java.util.Collections;
-import java.util.List;
-import java.util.Random;
-import java.util.Set;
-import java.util.UUID;
-
-// CraftBukkit start
 import dev.cobblesword.nachospigot.commons.Constants;
 import org.bukkit.Location;
-import org.bukkit.craftbukkit.event.CraftEventFactory;
 import org.bukkit.event.entity.EntityTeleportEvent;
+
+import java.util.*;
 // CraftBukkit end
 
 public class EntityEnderman extends EntityMonster {

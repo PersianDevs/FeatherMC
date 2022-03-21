@@ -1,7 +1,7 @@
 package net.minecraft.server;
 
 import dev.cobblesword.nachospigot.commons.Constants;
-import org.bukkit.event.player.PlayerShearEntityEvent; // CraftBukkit
+import org.bukkit.event.player.PlayerShearEntityEvent;
 
 public class EntityMushroomCow extends EntityCow {
 

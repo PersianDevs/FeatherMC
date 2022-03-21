@@ -2,10 +2,10 @@ package net.minecraft.server;
 
 // CraftBukkit start
 
+import com.destroystokyo.paper.PaperConfig;
 import dev.cobblesword.nachospigot.commons.Constants;
 import me.elier.nachospigot.config.NachoConfig;
 import org.bukkit.Bukkit;
-import com.destroystokyo.paper.PaperConfig;
 import org.bukkit.craftbukkit.event.CraftEventFactory;
 import org.bukkit.event.player.PlayerTeleportEvent;
 

@@ -1,10 +1,11 @@
 package net.minecraft.server;
 
-import java.util.Iterator;
+import net.techcable.tacospigot.HopperPusher;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.bukkit.event.player.PlayerPickupItemEvent; // CraftBukkit
-import net.techcable.tacospigot.HopperPusher; // TacoSpigot
+import org.bukkit.event.player.PlayerPickupItemEvent;
+
+import java.util.Iterator;
 
 // TacoSpigot start - implement HopperPusher
 public class EntityItem extends Entity implements HopperPusher {

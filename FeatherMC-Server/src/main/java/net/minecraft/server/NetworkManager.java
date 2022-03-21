@@ -1,10 +1,11 @@
 package net.minecraft.server;
 
-import com.velocitypowered.natives.compression.VelocityCompressor; // Paper
-import com.velocitypowered.natives.util.Natives; // Paper
-import dev.cobblesword.nachospigot.Nacho; // Nacho
-import dev.cobblesword.nachospigot.exception.ExploitException; // Nacho
 import com.google.common.collect.Queues;
+import com.velocitypowered.natives.compression.VelocityCompressor;
+import com.velocitypowered.natives.util.Natives;
+import dev.cobblesword.nachospigot.Nacho;
+import dev.cobblesword.nachospigot.commons.minecraft.CryptException;
+import dev.cobblesword.nachospigot.exception.ExploitException;
 import io.netty.channel.*;
 import io.netty.channel.local.LocalChannel;
 import io.netty.channel.local.LocalServerChannel;
@@ -14,12 +15,6 @@ import io.netty.util.AttributeKey;
 import io.netty.util.concurrent.AbstractEventExecutor;
 import io.netty.util.concurrent.Future;
 import io.netty.util.concurrent.GenericFutureListener;
-import java.net.SocketAddress;
-import java.util.Iterator;
-import java.util.Queue;
-import java.util.concurrent.locks.ReentrantReadWriteLock;
-
-import dev.cobblesword.nachospigot.commons.minecraft.CryptException;
 import org.apache.commons.lang3.ArrayUtils;
 import org.apache.commons.lang3.Validate;
 import org.apache.logging.log4j.LogManager;
@@ -28,6 +23,11 @@ import org.apache.logging.log4j.Marker;
 import org.apache.logging.log4j.MarkerManager;
 import org.bukkit.Bukkit;
 import org.bukkit.craftbukkit.entity.CraftPlayer;
+
+import java.net.SocketAddress;
+import java.util.Iterator;
+import java.util.Queue;
+import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 public class NetworkManager extends SimpleChannelInboundHandler<Packet<?>> {
 

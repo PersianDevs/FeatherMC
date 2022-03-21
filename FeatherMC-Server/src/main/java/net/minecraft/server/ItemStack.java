@@ -1,14 +1,8 @@
 package net.minecraft.server;
 
+import com.destroystokyo.paper.PaperConfig;
 import com.google.common.collect.HashMultimap;
 import com.google.common.collect.Multimap;
-import java.text.DecimalFormat;
-import java.util.Random;
-
-// CraftBukkit start
-import java.util.List;
-import java.util.Map;
-
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.TreeType;
@@ -17,9 +11,11 @@ import org.bukkit.craftbukkit.block.CraftBlockState;
 import org.bukkit.craftbukkit.util.CraftMagicNumbers;
 import org.bukkit.entity.Player;
 import org.bukkit.event.world.StructureGrowEvent;
-// CraftBukkit end
 
-import com.destroystokyo.paper.PaperConfig; // PaperSpigot
+import java.text.DecimalFormat;
+import java.util.List;
+import java.util.Map;
+import java.util.Random;
 
 public final class ItemStack {
 

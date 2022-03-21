@@ -1,9 +1,10 @@
 package net.minecraft.server;
 
-import java.util.Random;
-import java.util.UUID;
 import me.elier.nachospigot.config.NachoConfig;
 import net.jafama.FastMath;
+
+import java.util.Random;
+import java.util.UUID;
 
 public class MathHelper {
     public static final float a = c(2.0F);

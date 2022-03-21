@@ -1,7 +1,7 @@
 package net.minecraft.server;
 
 import dev.cobblesword.nachospigot.commons.Constants;
-import org.bukkit.event.entity.ExplosionPrimeEvent; // CraftBukkit
+import org.bukkit.event.entity.ExplosionPrimeEvent;
 
 public class EntityTNTPrimed extends Entity {
 

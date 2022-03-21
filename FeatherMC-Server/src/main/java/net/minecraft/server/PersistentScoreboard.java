@@ -1,13 +1,13 @@
 package net.minecraft.server;
 
-import java.util.Collection;
-import java.util.Iterator;
-
 import me.elier.nachospigot.config.NachoConfig;
 import net.minecraft.server.IScoreboardCriteria.EnumScoreboardHealthDisplay;
 import net.minecraft.server.ScoreboardTeamBase.EnumNameTagVisibility;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
+import java.util.Collection;
+import java.util.Iterator;
 
 public class PersistentScoreboard extends PersistentBase {
     private static final Logger b = LogManager.getLogger();

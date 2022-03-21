@@ -1,16 +1,11 @@
 package org.bukkit.craftbukkit.command;
 
-import net.minecraft.server.ICommandListener;
 import net.minecraft.server.CommandBlockListenerAbstract;
 import net.minecraft.server.IChatBaseComponent;
-
-import org.bukkit.ChatColor;
+import net.minecraft.server.ICommandListener;
 import org.bukkit.block.Block;
 import org.bukkit.command.BlockCommandSender;
 import org.bukkit.craftbukkit.util.CraftChatMessage;
-
-import java.util.List;
-import java.util.stream.Collectors;
 
 /**
  * Represents input from a command block

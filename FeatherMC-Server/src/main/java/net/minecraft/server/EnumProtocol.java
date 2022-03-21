@@ -3,15 +3,14 @@ package net.minecraft.server;
 import com.google.common.collect.BiMap;
 import com.google.common.collect.HashBiMap;
 import com.google.common.collect.Maps;
-
-import java.util.Map;
-import java.util.function.Supplier;
-
 import io.netty.util.collection.IntObjectHashMap;
 import io.netty.util.collection.IntObjectMap;
 import it.unimi.dsi.fastutil.objects.Object2IntMap;
 import it.unimi.dsi.fastutil.objects.Object2IntOpenHashMap;
 import me.elier.nachospigot.config.NachoConfig;
+
+import java.util.Map;
+import java.util.function.Supplier;
 
 public enum EnumProtocol {
 

@@ -3,6 +3,7 @@ package net.minecraft.server;
 import com.eatthepath.uuid.FastUUID;
 import com.google.gson.JsonObject;
 import com.mojang.authlib.GameProfile;
+
 import java.util.Date;
 import java.util.UUID;
 

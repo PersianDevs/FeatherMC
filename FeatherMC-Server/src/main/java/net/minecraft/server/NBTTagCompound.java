@@ -1,15 +1,14 @@
 package net.minecraft.server;
 
 import dev.cobblesword.nachospigot.commons.Constants;
-import it.unimi.dsi.fastutil.objects.Object2ObjectOpenHashMap;
 
 import java.io.DataInput;
 import java.io.DataOutput;
 import java.io.IOException;
 import java.util.Iterator;
 import java.util.Map;
-import java.util.Set;
 import java.util.Map.Entry;
+import java.util.Set;
 import java.util.concurrent.Callable;
 
 public class NBTTagCompound extends NBTBase {

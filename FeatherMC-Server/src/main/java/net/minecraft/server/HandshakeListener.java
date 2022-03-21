@@ -2,7 +2,6 @@ package net.minecraft.server;
 
 import it.unimi.dsi.fastutil.objects.Object2LongOpenHashMap;
 
-// CraftBukkit start
 import java.net.InetAddress;
 import java.util.Map;
 // CraftBukkit end

@@ -5,7 +5,9 @@ import com.google.common.collect.Maps;
 import it.unimi.dsi.fastutil.objects.ObjectArrayList;
 import org.bukkit.craftbukkit.event.CraftEventFactory;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 
 public class CraftingManager {
 

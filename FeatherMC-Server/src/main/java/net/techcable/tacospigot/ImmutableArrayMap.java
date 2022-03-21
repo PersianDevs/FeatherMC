@@ -1,16 +1,10 @@
 package net.techcable.tacospigot;
 
-import java.util.AbstractMap;
-import java.util.AbstractSet;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.Set;
-import java.util.function.BiConsumer;
-
 import com.google.common.base.Preconditions;
 import com.google.common.collect.Maps;
+
+import java.util.*;
+import java.util.function.BiConsumer;
 
 public class ImmutableArrayMap<K, V> extends AbstractMap<K, V> implements Map<K, V> {
     private final Indexer<K> indexer;

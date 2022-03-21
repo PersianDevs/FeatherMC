@@ -1,13 +1,13 @@
 package net.minecraft.server;
 
 // CraftBukkit start
-import java.util.List;
 
+import net.techcable.tacospigot.HopperPusher;
 import org.bukkit.craftbukkit.entity.CraftHumanEntity;
 import org.bukkit.entity.HumanEntity;
 import org.bukkit.inventory.InventoryHolder;
-// CraftBukkit end
-import net.techcable.tacospigot.HopperPusher; // TacoSpigot
+
+import java.util.List;
 
 // TacoSpigot start - HopperPusher
 public abstract class EntityMinecartContainer extends EntityMinecartAbstract implements ITileInventory, HopperPusher {

@@ -2,20 +2,15 @@ package net.minecraft.server;
 
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
-
-// Nacho start
 import dev.cobblesword.nachospigot.commons.Constants;
 import dev.cobblesword.nachospigot.commons.minecraft.MCUtils;
 import me.elier.nachospigot.config.NachoConfig;
 import net.jafama.FastMath;
-// Nacho end
-// CraftBukkit start
 import org.bukkit.Location;
 import org.bukkit.craftbukkit.event.CraftEventFactory;
 import org.bukkit.event.block.BlockExplodeEvent;
 import org.bukkit.event.entity.EntityExplodeEvent;
 import xyz.sculas.nacho.async.AsyncExplosions;
-// CraftBukkit end
 
 import java.util.*;
 import java.util.concurrent.CompletableFuture;

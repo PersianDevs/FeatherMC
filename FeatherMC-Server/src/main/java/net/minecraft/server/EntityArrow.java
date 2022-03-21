@@ -1,17 +1,14 @@
 package net.minecraft.server;
 
-import java.util.List;
-
-// CraftBukkit start
 import dev.cobblesword.nachospigot.commons.Constants;
-import org.bukkit.entity.LivingEntity;
-import org.bukkit.event.entity.EntityCombustByEntityEvent;
-import org.bukkit.event.player.PlayerPickupItemEvent;
-// CraftBukkit end
-// TacoSpigot start
 import net.techcable.tacospigot.event.entity.ArrowCollideEvent;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Arrow;
+import org.bukkit.entity.LivingEntity;
+import org.bukkit.event.entity.EntityCombustByEntityEvent;
+import org.bukkit.event.player.PlayerPickupItemEvent;
+
+import java.util.List;
 // TacoSpigot end
 
 public class EntityArrow extends Entity implements IProjectile {

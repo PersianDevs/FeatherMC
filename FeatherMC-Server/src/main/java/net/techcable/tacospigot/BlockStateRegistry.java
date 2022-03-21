@@ -1,14 +1,11 @@
 package net.techcable.tacospigot;
 
-import gnu.trove.map.TObjectIntMap;
-import gnu.trove.map.hash.TObjectIntHashMap;
+import net.minecraft.server.IBlockState;
 
 import java.util.Arrays;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.atomic.AtomicInteger;
-
-import net.minecraft.server.IBlockState;
 
 public class BlockStateRegistry {
     private BlockStateRegistry() {} // Utility class

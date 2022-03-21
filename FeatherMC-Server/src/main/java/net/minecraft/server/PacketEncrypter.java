@@ -1,12 +1,12 @@
 package net.minecraft.server;
 
-import com.velocitypowered.natives.encryption.VelocityCipher; // Paper
-import com.velocitypowered.natives.util.MoreByteBufUtils; // Paper
+import com.velocitypowered.natives.encryption.VelocityCipher;
+import com.velocitypowered.natives.util.MoreByteBufUtils;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
-import io.netty.handler.codec.MessageToMessageEncoder; // Paper
+import io.netty.handler.codec.MessageToMessageEncoder;
 
-import java.util.List; // Paper
+import java.util.List;
 
 public class PacketEncrypter extends MessageToMessageEncoder<ByteBuf> { // Paper - change superclass
     private final VelocityCipher cipher; // Paper

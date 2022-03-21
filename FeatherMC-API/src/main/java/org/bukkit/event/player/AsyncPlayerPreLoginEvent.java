@@ -1,10 +1,10 @@
 package org.bukkit.event.player;
 
-import java.net.InetAddress;
-import java.util.UUID;
-
 import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
+
+import java.net.InetAddress;
+import java.util.UUID;
 
 /**
  * Etela'ati Ro Zakhire Mikone Vaghty Ke Player Join Mishe

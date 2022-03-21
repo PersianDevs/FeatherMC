@@ -1,9 +1,10 @@
 package net.minecraft.server;
 
+import net.minecraft.server.DataWatcher.WatchableObject;
+
 import java.io.IOException;
 import java.util.List;
 import java.util.UUID;
-import net.minecraft.server.DataWatcher.WatchableObject;
 
 public class PacketPlayOutNamedEntitySpawn implements Packet<PacketListenerPlayOut> {
     private int a; public int getEntityId() { return this.a; } public void setEntityId(int id) { this.a = id; }

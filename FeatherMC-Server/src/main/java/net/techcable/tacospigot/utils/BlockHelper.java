@@ -1,20 +1,11 @@
 package net.techcable.tacospigot.utils;
 
-import java.util.AbstractSet;
-import java.util.Iterator;
-import java.util.Spliterator;
-import java.util.Spliterators;
-import java.util.function.BiConsumer;
-import java.util.function.BiPredicate;
-import java.util.stream.Stream;
-import java.util.stream.StreamSupport;
-
-import com.google.common.base.Preconditions;
-import com.google.common.collect.AbstractIterator;
-
 import net.minecraft.server.Block;
 import net.minecraft.server.BlockPosition;
 import net.minecraft.server.World;
+
+import java.util.function.BiConsumer;
+import java.util.function.BiPredicate;
 
 public class BlockHelper {
     private BlockHelper() {}
