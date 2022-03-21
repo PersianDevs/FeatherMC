@@ -2365,45 +2365,49 @@ public abstract class World implements IBlockAccess {
                     this.worldData.setWeatherDuration(this.worldData.hasStorm() ? 1 : 2);
                 }
 
-                int j = this.worldData.getThunderDuration();
-
-                if (j <= 0) {
-                    if (this.worldData.isThundering()) {
-                        this.worldData.setThunderDuration(this.random.nextInt(12000) + 3600);
-                    } else {
-                        this.worldData.setThunderDuration(this.random.nextInt(168000) + 12000);
-                    }
-                } else {
-                    --j;
-                    this.worldData.setThunderDuration(j);
-                    if (j <= 0) {
-                        this.worldData.setThundering(!this.worldData.isThundering());
-                    }
-                }
+                // FeatherMC - Removed Weather Cycle
+//                int thunderDuration = this.worldData.getThunderDuration();
+//
+//                if (thunderDuration <= 0) {
+//                    if (this.worldData.isThundering()) {
+//                        this.worldData.setThunderDuration(this.random.nextInt(12000) + 3600);
+//                    } else {
+//                        this.worldData.setThunderDuration(this.random.nextInt(168000) + 12000);
+//                    }
+//                } else {
+//                    --thunderDuration;
+//                    this.worldData.setThunderDuration(thunderDuration);
+//                    if (thunderDuration <= 0) {
+//                        this.worldData.setThundering(!this.worldData.isThundering());
+//                    }
+//                }
+                // FeatherMC end
 
                 this.q = this.r;
-                if (this.worldData.isThundering()) {
-                    this.r = (float) ((double) this.r + 0.01D);
-                } else {
-                    this.r = (float) ((double) this.r - 0.01D);
-                }
+//                if (this.worldData.isThundering()) {
+//                    this.r = (float) ((double) this.r + 0.01D);
+//                } else {
+//                    this.r = (float) ((double) this.r - 0.01D);
+//                }
 
                 this.r = MathHelper.a(this.r, 0.0F, 1.0F);
                 int k = this.worldData.getWeatherDuration();
 
-                if (k <= 0) {
-                    if (this.worldData.hasStorm()) {
-                        this.worldData.setWeatherDuration(this.random.nextInt(12000) + 12000);
-                    } else {
-                        this.worldData.setWeatherDuration(this.random.nextInt(168000) + 12000);
-                    }
-                } else {
-                    --k;
-                    this.worldData.setWeatherDuration(k);
-                    if (k <= 0) {
-                        this.worldData.setStorm(!this.worldData.hasStorm());
-                    }
-                }
+                // FeatherMC - Removed Weather Cycle
+//                if (k <= 0) {
+//                    if (this.worldData.hasStorm()) {
+//                        this.worldData.setWeatherDuration(this.random.nextInt(12000) + 12000);
+//                    } else {
+//                        this.worldData.setWeatherDuration(this.random.nextInt(168000) + 12000);
+//                    }
+//                } else {
+//                    --k;
+//                    this.worldData.setWeatherDuration(k);
+//                    if (k <= 0) {
+//                        this.worldData.setStorm(!this.worldData.hasStorm());
+//                    }
+//                }
+                // FeatherMC end
 
                 this.o = this.p;
                 if (this.worldData.hasStorm()) {

@@ -19,10 +19,12 @@ public class CraftWeather extends CraftEntity implements Weather {
     public String toString() {
         return "CraftWeather";
     }
+
     @Override
     public void sendMessageColor(String message) {
 
     }
+
     public EntityType getType() {
         return EntityType.WEATHER;
     }

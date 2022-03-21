@@ -75,7 +75,7 @@ public class PlayerConnection implements PacketListenerPlayIn, IUpdatePlayerList
         this.networkManager = networkmanager;
 
         this.lastBookTick = MinecraftServer.currentTick;
-        networkmanager.a((PacketListener) this);
+        networkmanager.a(this);
         this.player = entityplayer;
         entityplayer.playerConnection = this;
 
