@@ -199,13 +199,10 @@ public class ServerStatisticManager extends StatisticManager {
 
     public void updateStatistics(EntityPlayer entityplayer) {
         HashMap hashmap = Maps.newHashMap();
-        Iterator iterator = AchievementList.e.iterator();
 
-        while (iterator.hasNext()) {
-            Achievement achievement = (Achievement) iterator.next();
-
+        for (Achievement achievement : AchievementList.e) {
             if (this.hasAchievement(achievement)) {
-                hashmap.put(achievement, Integer.valueOf(this.getStatisticValue(achievement)));
+                hashmap.put(achievement, this.getStatisticValue(achievement));
                 this.e.remove(achievement);
             }
         }
